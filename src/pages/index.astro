@@ -5,17 +5,13 @@ import LinkedIn from '../components/icons/LinkedIn.astro';
 import Social from '../components/Social.astro';
 import GitHub from '../components/icons/GitHub.astro';
 import Mail from '../components/icons/Mail.astro';
+import Sectioncontainer from '../components/Sectioncontainer.astro';
 ---
 
-<Layout title="AriSoph Porfolio - Desarolladora y Programadora Web"
-description="Descubre el portfolio de Arian Sophia, una desarrolladora web talentosa y creativa. Especializada en diseño y 
-desarrollo de sitios web personalizados y optimizados, AriDev ofrece soluciones innovadoras para empresas y particulares. 
-Con un enfoque en la experiencia del usuario y el rendimiento, cada proyecto refleja un compromiso con la calidad y la excelencia. 
-¿Buscas una desarrolladora web que transforme tus ideas en realidad? Visita el portfolio de AriDev y comienza tu proyecto hoy mismo."
->
-	<main >
-
-        <section class="w-full lg:w-[740px] mx-auto py-44">
+<Layout title="AriSoph Porfolio - Desarolladora y Programadora Web" 
+description="Descubre el portfolio de Arian Sophia, una desarrolladora web talentosa y creativa. Especializada en diseño y desarrollo de sitios web personalizados y optimizados, AriDev ofrece soluciones innovadoras para empresas y particulares. Con un enfoque en la experiencia del usuario y el rendimiento, cada proyecto refleja un compromiso con la calidad y la excelencia. ¿Buscas una desarrolladora web que transforme tus ideas en realidad? Visita el portfolio de AriDev y comienza tu proyecto hoy mismo.">
+	<main>
+        <Sectioncontainer class="w-full lg:w-[740px] mx-auto py-44">
             <h1 class="text-white font-bold flex justify-center text-5xl gap-x-4 pb-10 flex flex-row">Hey, soy AriDev
             <a class="flex justify-center items-center"    
                  href="https://www.linkedin.com/in/frank-mu%C3%B1oz-large-621aa8252/"
@@ -28,7 +24,7 @@ Con un enfoque en la experiencia del usuario y el rendimiento, cada proyecto ref
 
                     <nav class="flex gap-x-4 mt-8">
                         <Social href="https://www.linkedin.com/in/frank-mu%C3%B1oz-large-621aa8252/">
-                            <LinkedIn class="w-6 h-6 "/>
+                            <LinkedIn class="w-6 h-6"/>
                             LinkedIn
                         </Social>
                         <Social href="https://github.com/AriSophDev">
@@ -41,8 +37,9 @@ Con un enfoque en la experiencia del usuario y el rendimiento, cada proyecto ref
                         </Social>
                     </nav>
                 
-        </section>
-       
+        </Sectioncontainer>
+    
+    </Sectioncontainer>
     </main>
 </Layout>
 

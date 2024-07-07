@@ -2,37 +2,56 @@
 import Badge from "./Badge.astro";
 import LinkedIn from "./icons/LinkedIn.astro";
 import Social from "./Social.astro";
-import GitHub from "./icons/LinkedIn.astro";
+import GitHub from "./icons/GitHub.astro";
 import Mail from "./icons/Mail.astro";
+
+
+const personalImageAlt = "Sophimage"
 ---
 
 
 
-<div>
-    <h1 class="text-white font-bold flex justify-center text-5xl gap-x-4 pb-10 flex flex-row">Hey, soy AriDev
-        <a class="flex justify-center items-center"    
-             href="https://www.linkedin.com/in/frank-mu%C3%B1oz-large-621aa8252/"
-             target="_blank"
-             rel="noopener"
-             ><Badge>Disponible para trabajar</Badge></a></h1>
-        <h2 class="text-xl text-wrap"> 
-            <span class="opacity-80">Tengo experiencia en desarrollo web y front end. </span><span class="text-pink-300">De Santa Marta, Colombia.</span>
-            <span class="opacity-80">me expecializo en crear aplicaciones web y aplicaciones moviles.</span></h2>
-    
-                <nav class="flex gap-x-4 mt-8">
-                    <Social href="https://www.linkedin.com/in/frank-mu%C3%B1oz-large-621aa8252/">
-                        <LinkedIn class="w-6 h-6"/>
-                        LinkedIn
-                    </Social>
-                    <Social href="https://github.com/AriSophDev">
-                        <GitHub class="w-6 h-6"></GitHub>
-                        GitHub
-                    </Social>
-                    <Social href="mailto:sophialarge57@gmail.com">
-                        <Mail class="w-6 h-6"></Mail>
-                        Mail
-                    </Social>
-                </nav>
-            
-</div>
-    
+<div class="max-w-xl">
+    <div class="flex gap-4 mb-4">
+      <img
+        class="rounded-full shadow-lg size-16"
+        src="/Image/Sophimage"
+        alt={personalImageAlt}
+      />
+      <a
+        href="https://www.linkedin.com/in/frank-mu%C3%B1oz-large-621aa8252/"
+        target="_blank"
+        rel="noopener"
+        class="flex items-center transition md:justify-center md:hover:scale-105"
+      >
+        <Badge>Disponible para trabajar</Badge>
+      </a>
+    </div>
+    <h1
+      class="text-4xl font-bold tracking-tight text-gray-800 sm:text-5xl dark:text-white"
+    >
+      Hey, soy AriSophDev.
+    </h1>
+    <p
+      class="mt-6 text-xl text-gray-600 dark:[&>strong]:text-pink-200 [&>strong]:font-semibold dark:text-gray-300"
+    >
+     <strong
+        >Desarrolladora TFem Front End y Estudiante de Diseño Digital </strong
+      > Santa Marta, Colombia. Especializada en el desarrollo de aplicaciones web
+        únicas.
+    </p>
+    <nav class="flex flex-wrap gap-4 mt-8">
+      <Social href="mailto:Sophialarge@gmail.com">
+        <Mail class="size-4" />
+        Contáctame
+      </Social>
+      <Social href="https://www.linkedin.com/in/frank-mu%C3%B1oz-large-621aa8252/">
+        <LinkedIn class="size-4" />
+        LinkedIn
+      </Social>
+      <Social href="https://github.com/AriSophDev">
+        <GitHub class="size-4"/>
+        GitHub
+      </Social>
+    </nav>
+  </div>

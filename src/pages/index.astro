@@ -4,6 +4,8 @@ import Sectioncontainer from '../components/Sectioncontainer.astro';
 import Hero from '../components/Hero.astro';
 import CodeIcon from '../components/icons/Code.astro'
 import Projects from '../components/Proyectos.astro'
+import Aboutme from '../components/Aboutme.astro';
+import ProfileCheck from '../components/icons/ProfileCheck.astro'
 ---
 
 <Layout title="AriSoph Porfolio - Desarolladora y Programadora Web" 
@@ -25,6 +27,17 @@ description="Descubre el portfolio de Arian Sophia, una desarrolladora web talen
         Proyectos
       </h2>
       <Projects />
+    </Sectioncontainer>
+
+
+    <Sectioncontainer id="sobre-mi">
+      <h2
+        class="flex items-center mb-6 text-3xl font-semibold gap-x-8 text-white "
+      >
+        <ProfileCheck class="size-8" />
+        Sobre mí
+      </h2>
+      <Aboutme />
     </Sectioncontainer>
    </div>
     </main>
